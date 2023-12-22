@@ -1,0 +1,37 @@
+first_number = int(input("ВВЕДИТЕ ПЕРВОЕ ЧИСЛО"))
+if first_number == 0:
+    print("Поздравляю! теперь вы - горох (выйди и зайди нормально)")
+    user_brain = 0
+else:
+    user_brain = 1
+second_number = int(input("ВЕДИТЕ ВТОРОЕ ЧИСЛО"))
+if second_number == 0:
+    print("Поздравляю! теперь вы - горох!!!")
+    user_brain = 0
+else:
+    user_brain = 1
+class calculator:
+    def addition(self):
+        result = first_number + second_number
+        print(first_number, "+", second_number, "=", result)
+    def subtraction(self):
+        result = first_number - second_number
+        print(first_number, "-", second_number, "=", result)
+    def multiplication(self):
+        result = first_number * second_number
+        print(first_number, "*", second_number, "=", result)
+    def division(self):
+        if user_brain == 0:
+            print("ДЕЛЕНИЕ НЕВОЗМОЖНО")
+        else:
+            result = first_number / second_number
+            print(first_number, "/", second_number, "=", result)
+    def exponentiation(self):
+        result = first_number ** second_number
+        print(first_number, "в степени", second_number, "=", result)
+action = calculator()
+action.addition()
+action.subtraction()
+action.multiplication()
+action.division()
+action.exponentiation()
